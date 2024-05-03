@@ -1,9 +1,10 @@
+import psycopg2
 config = psycopg2.connect(
     host='localhost',
     database='postgres',
-    port=5433,
+    port=5432,
     user='postgres',
-    password='12345'
+    password='postgres'
 )
 
 current = config.cursor()
